@@ -28,7 +28,7 @@ vectJo = np.array([-0.47719972,-0.04196086, -0.70375271,-0.57641147, -0.21998859
 
 prom1 = promedio(vectAd)
 tetaM1 = prom1 - 1
-tetaV1 = (min(vectAd) + max(vectAd) - 2) / 2
+tetaV1 = min(vectAd)
 
 
 print("Promedio Adabache:", prom1)
@@ -41,4 +41,5 @@ tetaV2 = min(vectJo)
 
 print("Promedio de Johan: ", prom2)
 print("Estimador de momentos Johan: ", tetaM2)
+
 print("Estimador de máxima verosimilitud Johan: ", tetaV2)
